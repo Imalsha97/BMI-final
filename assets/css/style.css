@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Scroll bar Styling*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    /* background-image: linear-gradient(to right top, #e6eef9, #e6ecfb, #e8e9fd, #ece5fd, #f2e1fb); */
+    background-color: #E5E5E5;
+    line-height:0.6;
+
+}
+
+
+.title-container {
+    /* position: relative; */
+    width: 100vw;
+    height: 100px;
+    background-color:#420264;
+}
+
+.title-container > .title  {
+    
+    color: white;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 90px;
+    font-weight:bold;
+    text-align: center;
+   
+    
+}
+
+.row{
+    padding-top: 40pt;
+    gap:0;
+    
+}
+
+.details{
+    font-size: 20pt;
+    font-weight: bold;
+}
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 12pt;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    color: #888;
+    font-weight: 0;
+    
+    
+  }
+  .item{
+    border: 2px solid #008F7A;
+    border-radius: 8px;
+    background-color: rgb(211, 211, 211);
+    height: 30pt;
+    text-align: center;
+    color:#008F7A;
+    font-size: 15pt;
+    font-weight: bold;
+   text-decoration-color: rgb(226, 225, 225);
+
+    
+  }
+
+    
+  
+.col-md-6{
+    padding-bottom: 0;
+}
+
+
+.button{
+    padding-top: 0;
+    height: 45px;
+    margin: 35px 0;
+    text-align: center;
+ 
+  }
+  #btn{
+    text-align:center;
+    height: 100%;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Open Sans;
+    background-image: linear-gradient(to right top, #008f7a, #009298, #0092b1, #2f90c1, #688bc6, #7381c2, #8076ba, #8d6ab0, #8057a7, #73449e, #663095, #59188b);
+   
+  }
+
+.result1{
+     text-align: center;
+     font-size: 18pt;
+     font-weight: bold;
+     color: #008F7A;
+}
+
+
+/*Footer styling*/
+.footer-container {
+    position: relative;
+    width: 100vw;
+    height: 38px;
+    background-color: #420264;
+    
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.footer-container > h3 {
+    position: absolute;
+    width: max-content;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e3e3e3;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 15px;
+}
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+  .pop1{
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .quotes{
+    text-align: center;
+      font-size: 15pt;
+      font-weight: bold;
+      font-style: italic;
+    color:rgb(236, 236, 236);
+  }
+   
+  .popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background-image: linear-gradient(to right top, #723178, #7c5395, #8773af, #9592c6, #a8b0da, #a7bce4, #a8c8ec, #aad4f3, #8cd2ef, #6cd0e6, #4bcdd6, #33c9c0);
+    width:95%;
+    max-width:500px;
+    height:250px;
+    z-index:2;
+    text-align:left;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+   
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+   
+  .button2 {
+    position:relative;
+    padding:10px;
+    font-size:18px;
+    border-radius: 30px;
+    border:2px solid #008F7A;
+    color:gray;
+    text-transform:uppercase;
+    font-weight:bold;
+    background:#f8f4fa;
+  }
+
+
+
